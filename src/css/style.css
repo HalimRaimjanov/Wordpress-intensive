@@ -77,7 +77,8 @@ h2.title {
     font-weight: 700;
 }
 
-.promo .promo-btn {
+.promo .promo-btn,
+.gift .promo-btn {
     display: block;
     margin: 73px auto;
     width: 313px;
@@ -120,7 +121,8 @@ h2.title {
     padding: 85px 0 75px 0;
 }
 
-.waiting .waiting-header {
+.waiting .waiting-header,
+.finish .finish-header {
     color: #252525;
     font-family: Roboto;
     font-size: 30px;
@@ -129,11 +131,17 @@ h2.title {
     text-align: center;
 }
 
-.waiting .waiting-divider {
+
+.finish .finish-header {
+    color: #fff;
+}
+
+.waiting .waiting-divider,
+.finish .finish-divider {
     width: 217px;
     height: 4px;
     background-color: #f9bf3b;
-    margin: 18px auto auto;
+    margin: 18px auto 0 auto;
 }
 
 .waiting .waiting-subheader {
@@ -201,4 +209,143 @@ h2.title {
     top: -54px;
     left: -240px;
     z-index: -1;
+}
+
+.finish {
+    min-height: 447px;
+    padding: 86px 0 79px 0;
+    background: url("/src/img/second_bg.png") center center/cover no-repeat;
+}
+
+.finish .finish-wrapper {
+    margin-top: 41px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.finish .finish-wrapper .finish-item {
+    width: 204px;
+}
+
+.finish .finish-wrapper .finish-item .finish-round {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 115px;
+    height: 115px;
+    background-color: #b4e2ff;
+    ;
+    border-radius: 100%;
+}
+
+.finish .finish-wrapper .finish-item .finish-descr {
+    margin-top: 25px;
+    text-align: center;
+    color: #efefef;
+    font-family: Roboto;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 20px;
+}
+
+.gift {
+    min-height: 631px;
+    padding: 88px 0 88px 0;
+    background: #EFEFEF;
+}
+
+.gift .gift-img img,
+.vebinar .vebinar-img img {
+    display: block;
+    margin: 0 auto;
+}
+
+.gift .gift-text {
+    margin-top: 45px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 43px;
+    text-align: center;
+}
+
+.vebinar {
+    min-height: 514px;
+    padding-top: 81px;
+}
+
+.vebinar h1 {
+    margin-top: 36px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.vebinar .time {
+    margin-top: 30px;
+    display: block;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #299CBD;
+}
+
+.vebinar .vebinar-text {
+    margin-top: 24.5px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 20px;
+    text-align: center;
+    color: #4A4A4A;
+}
+
+.footer {
+    min-height: 166px;
+    background-image: url("/src/img/footer.png");
+}
+
+.footer .container {
+    padding: 50.5px 0 68px 0;
+}
+
+.footer .links {
+    /* margin-top: 55px; */
+    display: block;
+    text-align: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 21px;
+    outline: none;
+    color:#888888;
+    text-decoration: none;
+}
+
+.footer .links a {
+    color:#888888;
+}
+
+.footer .footer-text {
+    display: block;
+    text-align: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+
+    font-size: 15px;
+    line-height: 21px;
+    color: #888888;
 }
