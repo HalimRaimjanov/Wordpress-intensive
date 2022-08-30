@@ -5,6 +5,7 @@
 }
 
 .container {
+    position: relative;
     width: 1140px;
     margin: 0 auto;
 }
@@ -99,13 +100,13 @@ h2.title {
 }
 
 .more .more-text {
-font-family: 'Roboto - Thin';
-font-weight: 100;
-font-size: 15px;
-line-height: 24px;
-text-transform: uppercase;
-color: #FFFFFF;
-text-align: center;
+    font-family: 'Roboto - Thin';
+    font-weight: 100;
+    font-size: 15px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-align: center;
 }
 
 .more .more-img {
@@ -114,7 +115,7 @@ text-align: center;
 }
 
 .waiting {
-    height: 604px;
+    min-height: 604px;
     background-color: #efefef;
     padding: 85px 0 75px 0;
 }
@@ -132,7 +133,7 @@ text-align: center;
     width: 217px;
     height: 4px;
     background-color: #f9bf3b;
-    margin: 18px auto  auto;
+    margin: 18px auto auto;
 }
 
 .waiting .waiting-subheader {
@@ -159,6 +160,7 @@ text-align: center;
 .waiting .waiting-wrapper .waiting-item .waiting-img {
     width: 100%;
 }
+
 .waiting .waiting-wrapper .waiting-item .waiting-descr {
     margin-top: 33px;
     color: #4a4a4a;
@@ -166,4 +168,37 @@ text-align: center;
     font-size: 15px;
     font-weight: 300;
     line-height: 21px;
+}
+
+.optimization {
+    min-height: 550px;
+    padding: 102px 0 107px 0;
+}
+
+.optimization .optimization-header {
+    margin-left: 391px;
+    color: #299cbd;
+    font-family: "Roboto - Black";
+    font-size: 29px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.optimization .optimization-text {
+    margin-top: 25px;
+    margin-left: 391px;
+    font-size: 17px;
+    font-weight: 300;
+    font-family: "Roboto - Light";
+}
+
+.optimization .optimization-text span {
+    font-weight: 700;
+}
+
+.optimization .optimization-img {
+    position: absolute;
+    top: -54px;
+    left: -240px;
+    z-index: -1;
 }
